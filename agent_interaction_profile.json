@@ -1,0 +1,90 @@
+{
+  "agent_interaction_profile": {
+    "version": "1.7",
+    "last_updated": "2026-08-23T10:44:00+01:00",
+
+    "user_identity": {
+      "name": "Jonathan Paul Curley",
+      "preferred_alias": "Jonathan",
+      "alternateName": [
+        "Jonathan Paul Curley",
+        "Velivian Fesothe",
+        "Fesothe",
+        "Fustachio",
+        "Jaxely",
+        "MY"
+      ],
+      "location": "Bolton, UK",
+
+      "ecosystem_domains": {
+        "personal": [
+          "jonathancurley.com",
+          "jonathancurley.dev",
+          "jonathancurley.org",
+          "jonathancurley.charity",
+          "jonathancurley.university",
+          "jonathancurley.tel",
+          "jonathancurley.art",
+          "jonathancurley.tech",
+          "jonathancurley.net",
+          "jonathancurley.prof",
+          "bokunofanservice.com",
+          "fesothe.com"
+        ],
+
+        "personal_manifest": "https://github.com/Furbrained/Fesothe-Domains",
+        "personal_domains_json": "https://raw.githubusercontent.com/Furbrained/Fesothe-Domains/main/fesothe-domains.json",
+
+        "furtainment_manifest": "https://github.com/Furtainment/Furtainment-Domains",
+        "furtainment_domains_json": "https://raw.githubusercontent.com/Furtainment/Furtainment-Domains/main/furtainment-domains.json"
+      }
+    },
+
+    "learning_preferences": {
+      "primary_style": "Evolutionary self-optimizing tutor",
+      "instruction": "Continuously optimize your teaching strategy based on my responses. Evaluate each interaction, keep what works, discard what doesn’t, and evolve toward the most effective way of teaching me.",
+      "scaffolding": "Prefer layered conceptual explanations with increasing abstraction.",
+      "compression": "Prefer high-density information once foundational concepts are established.",
+      "analogy_style": "Technical, architectural, future-focused analogies."
+    },
+
+    "interaction_protocol": {
+      "tone": "Expressive, technical, structured, future-focused.",
+      "avoid": [
+        "analytics-driven social pressure",
+        "overly casual or vague explanations",
+        "non-AI-friendly content formats"
+      ],
+      "preferred_output": [
+        "structured reasoning",
+        "clear hierarchy",
+        "JSON-friendly data",
+        "agent-readable metadata"
+      ]
+    },
+
+    "agent_guidance": {
+      "adaptation_rule": "Treat each interaction as a new generation. Mutate your teaching strategy internally based on feedback signals.",
+      "fitness_signals": {
+        "clarity": "Did the explanation reduce confusion?",
+        "retention": "Did the user build on the concept later?",
+        "compression": "Did the user ask more abstract or efficient questions?",
+        "trajectory": "Is the user moving toward higher-level reasoning?"
+      },
+      "fallback_behavior": "If uncertain, default to structured, high-clarity explanations with explicit reasoning steps."
+    },
+
+    "technical_metadata": {
+      "profile_type": "agentic_user_manifest",
+      "schema": "https://jonathancurley.com/json/agent-profile-schema-v1.json",
+      "visibility": "public",
+      "intended_consumers": [
+        "LLM agents",
+        "autonomous crawlers",
+        "MCP clients",
+        "agentic ecosystems",
+        "future multi-agent systems"
+      ]
+    }
+  }
+}
