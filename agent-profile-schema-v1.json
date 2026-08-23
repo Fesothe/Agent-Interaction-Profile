@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Interaction Profile Schema v1",
+  "description": "Schema definition for agent_interaction_profile.json, describing identity, domains, learning preferences, interaction rules, and agentic metadata.",
+  "type": "object",
+
+  "properties": {
+    "agent_interaction_profile": {
+      "type": "object",
+
+      "properties": {
+        "version": { "type": "string" },
+        "last_updated": { "type": "string", "format": "date-time" },
+
+        "user_identity": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "preferred_alias": { "type": "string" },
+            "alternateName": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "location": { "type": "string" },
+
+            "ecosystem_domains": {
+              "type": "object",
+              "properties": {
+                "personal": {
+                  "type": "array",
+                  "items": { "type": "string", "format": "uri" }
+                },
+                "personal_manifest": { "type": "string", "format": "uri" },
+                "personal_domains_json": { "type": "string", "format": "uri" },
+                "furtainment_manifest": { "type": "string", "format": "uri" },
+                "furtainment_domains_json": { "type": "string", "format": "uri" }
+              },
+              "required": [
+                "personal",
+                "personal_manifest",
+                "personal_domains_json",
+                "furtainment_manifest",
+                "furtainment_domains_json"
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "preferred_alias",
+            "alternateName",
+            "location",
+            "ecosystem_domains"
+          ]
+        },
+
+        "learning_preferences": {
+          "type": "object",
+          "properties": {
+            "primary_style": { "type": "string" },
+            "instruction": { "type": "string" },
+            "scaffolding": { "type": "string" },
+            "compression": { "type": "string" },
+            "analogy_style": { "type": "string" }
+          },
+          "required": [
+            "primary_style",
+            "instruction",
+            "scaffolding",
+            "compression",
+            "analogy_style"
+          ]
+        },
+
+        "interaction_protocol": {
+          "type": "object",
+          "properties": {
+            "tone": { "type": "string" },
+            "avoid": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "preferred_output": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["tone", "avoid", "preferred_output"]
+        },
+
+        "agent_guidance": {
+          "type": "object",
+          "properties": {
+            "adaptation_rule": { "type": "string" },
+            "fitness_signals": {
+              "type": "object",
+              "properties": {
+                "clarity": { "type": "string" },
+                "retention": { "type": "string" },
+                "compression": { "type": "string" },
+                "trajectory": { "type": "string" }
+              },
+              "required": [
+                "clarity",
+                "retention",
+                "compression",
+                "trajectory"
+              ]
+            },
+            "fallback_behavior": { "type": "string" }
+          },
+          "required": ["adaptation_rule", "fitness_signals", "fallback_behavior"]
+        },
+
+        "technical_metadata": {
+          "type": "object",
+          "properties": {
+            "profile_type": { "type": "string" },
+            "schema": { "type": "string", "format": "uri" },
+            "visibility": { "type": "string" },
+            "intended_consumers": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": [
+            "profile_type",
+            "schema",
+            "visibility",
+            "intended_consumers"
+          ]
+        }
+      },
+
+      "required": [
+        "version",
+        "last_updated",
+        "user_identity",
+        "learning_preferences",
+        "interaction_protocol",
+        "agent_guidance",
+        "technical_metadata"
+      ]
+    }
+  },
+
+  "required": ["agent_interaction_profile"]
+}
