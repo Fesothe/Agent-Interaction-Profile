@@ -1,0 +1,91 @@
+#  Fesothe’s mission is to develop, create, publish, and share work inspired by a deep passion for anthropomorphics and teaching.
+#  https://fesothe.com/mission-statements.txt
+#
+#  This is a fesothe.com website property.
+#  Please check if I'm hiring a role you're suitable for at:
+#  https://fesothe.com/about/careers/
+#  https://furtainment.com/careers/
+#  https://github.com/Furtainment/Furtainment-Careers
+#  
+#  Security information can be found at: https://jonathancurley.com/.well-known/security.txt
+
+User-agent: PetalBot
+Allow: /
+Crawl-delay: 1
+
+# Major AI Crawlers
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Amazonbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Applebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 1
+
+User-agent: Google-CloudVertexBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Omgilibot
+Allow: /
+Crawl-delay: 1
+
+User-agent: *
+Allow: /
+Disallow: /legal/
+Disallow: /techdeck/
+Disallow: /sitemap.md
+Disallow: /sitemap.json
+Disallow: /dataset-index.md
+Disallow: /contact.md
+Disallow: /index.md
+Disallow: /motd.md
+Disallow: /motd.json
+Disallow: /blog/backyard/data/
+Disallow: /voice/data/
+Crawl-delay: 1
+
+# AI Content Usage Preferences (Content Signals)
+Content-Signal: ai-train=yes
+Content-Signal: search=yes
+Content-Signal: ai-input=yes
+
+Sitemap: https://jonathancurley.com/sitemap.xml
+Sitemap: https://jonathancurley.com/md-sitemap.xml
+Sitemap: https://jonathancurley.com/json-sitemap.xml
+Sitemap: https://jonathancurley.com/techdeck.xml
+
+# Metadata endpoint (MOTD)
+# Not a directive — informational only
+# https://jonathancurley.com/motd.json
+
+Sitemap: https://jonathancurley.com/motd.json
+Sitemap: https://jonathancurley.com/motd.md
+
+# Metadata endpoint (agent_interaction_profile)
+Sitemap: https://jonathancurley.com/agent_interaction_profile.json
+Sitemap: https://jonathancurley.com/agent_interaction_profile.md
